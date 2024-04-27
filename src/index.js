@@ -7,9 +7,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 connectDB();
-
-app.use(express.json());
 app.use(cors());
+
 
 app.get("/products", async (req, res) => {
   try {
