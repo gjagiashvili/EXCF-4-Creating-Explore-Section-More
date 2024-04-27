@@ -47,15 +47,11 @@ const Products = () => {
                     {product.category}
                   </div>
                 )}
-                <img
-                  src={product.photo}
-                  alt={product.title}
-                  className={styles["img"]}
-                />
+                <img src={product.photo} className={styles["img"]} />
                 <div className={styles["favoriteButton"]}>
                   <img
                     src={heartIcon}
-                    alt="Favorite"
+                
                     className={styles["heartIcon"]}
                   />
                 </div>
