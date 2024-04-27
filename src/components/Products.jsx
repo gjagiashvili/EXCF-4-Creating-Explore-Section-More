@@ -3,13 +3,13 @@ import styles from "../modules/Products.module.scss";
 import heartIcon from "../assets/heart-icon.png";
 
 const Products = () => {
-  const [products, setProducts] = useState(null);
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:3001/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((error) => console.error("Error fetching products:", error));
+      .then((data) => setProduct(data))
+      .catch((error) => console.error(error));
   }, []);
 
   const renderStars = (rating) => {
