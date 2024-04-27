@@ -12,7 +12,6 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
-      <Products />
       <div className="view-all-products">
         <button className="view-all-button">View all products</button>
       </div>
